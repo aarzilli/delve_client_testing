@@ -1,0 +1,30 @@
+HOW TO USE
+
+Each subdirectory has one or more go files and a README.txt file.
+Open README.txt and follow the instructions.
+
+Tests 1 - 3 involve different ways to start delve.
+Tests 4 - 6 deal with breakpoints in concurrent programs, they all require a multicore computer with GOMAXPROCS unset or set to >1.
+Tests 7 - 10 deal with miscellaneous features.
+Tests 11 - 18 deal with variable loading and visualization, they all require a GUI client
+
+This is a more detailed summary of all tests:
+
+1. debug a _test.go file
+2. debug a core file
+3. let's users specify a --log-output parameter
+4. dealing with simultaneous breakpoint triggering on multiple goroutines
+5. dealing with breakpoints during next/step/stepout
+6. can request a manual stop
+7. can show disassembly and CPU registers (and keep it up to date with the current instruction)
+8. can show local variables of different goroutines or different frames, can execute next in a different goroutine
+9. displays a warning when stepping through a stale executable
+10. setting a breakpoint on a function should result in the breakpoint being after the prologue
+11. shows shadowed variables in a way that is distinct from visible variables
+12. can evaluate arbitrary expressions
+13. continue loading strings
+14. continue loading slices
+15. continue loading maps
+16. continue loading pointers
+17. continue loading interfaces
+18. displaying a map[int]string should not be confusing
