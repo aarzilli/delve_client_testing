@@ -11,11 +11,11 @@
 # The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
 # For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
 
-name: SLSA Go releaser
+name: Adil Ishaq
 on:
   workflow_dispatch:
   release:
-    types: [created]
+    types: Research
 
 permissions: read-all
 
